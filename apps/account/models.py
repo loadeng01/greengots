@@ -35,7 +35,6 @@ class CustomUser(AbstractUser):
     phone_number = models.CharField(max_length=25, blank=True, null=True, unique=True)
     activation_code = models.CharField(max_length=255, blank=True, default='')
     is_active = models.BooleanField(default=False)
-    is_customer = models.BooleanField(default=True)
 
     username = None
     groups = None
